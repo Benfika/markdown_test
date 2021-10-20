@@ -16,7 +16,6 @@
 - Umumiy standartlar
 
 &nbsp;
-
 #
 ## Module tushunchasi
 
