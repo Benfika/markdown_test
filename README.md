@@ -1,4 +1,4 @@
-![](gws_cropped_logo.png)
+![](gws_logo.png)
 
 ## **Green White Solutions kompaniyasining backend dasturlashga oid stardartlari**
 &nbsp;
@@ -80,7 +80,7 @@ end;
 ## Module lar ierarxiyasi
 
 1. _Module_ lar orqali qat&#39;iy ierarxiya quriladi. Natijada biror-bir _module_ faqat o&#39;zi va o&#39;zidan yuqori _module_ (lar)ga murojaat qilishi mumkin. _Module_ lar ierarxiyasi quyidagi sxemada ko&#39;rsatilgan.
-![](gws_cropped_logo.png)
+![](ierarxiya.png)
 1. Bundan tashqari, _module_ lar ierarxiyasini har bir loyihada mavjud bo&#39;lgan start.sql fayllarida ko&#39;rishingiz mumkin. start.sql faylining vazifasi - barcha _module_ lar paketlarini ishga tushurish.
 _xcore_ loyihasining start.sql faylidan bir parcha:
 ```
