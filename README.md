@@ -15,7 +15,7 @@
 - O&#39;zgaruvchilar (variables)
 - Umumiy standartlar
 
-
+<br/>
 #
 ## Module tushunchasi
 
