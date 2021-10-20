@@ -1,7 +1,7 @@
 ![](gws_cropped_logo.png)
 
 ## **Green White Solutions kompaniyasining backend dasturlashga oid stardartlari**
-
+&nbsp;
 ## Mundarija
 
 - Module tushunchasi
@@ -16,7 +16,8 @@
 - Umumiy standartlar
 
 &nbsp;
-#
+&nbsp;
+##
 ## Module tushunchasi
 
 ***Module*** – bu o&#39;xshash maqsadga ega fayllarni bir joyga to&#39;plab turuvchi loyiha qismi. Loyiha _(project)_ modullardan tashkil qilinadi.
@@ -26,6 +27,8 @@
 ***md*** – bu qisqa nomning negizida &quot;m deals&quot; iborasi turadi va bu _module_ buyurtma va tovarlarni qaytarishga *(«заказы и возвраты»)* tegishli fayllarini o&#39;z ichiga oladi.
 Yangi _module_ ga loyihaga ma&#39;sul shaxs tomonidan qisqa nom beriladi.
 
+&nbsp;
+&nbsp;
 ##
 ## _Module_ ning _setup_ papkasi
 
@@ -43,6 +46,8 @@ _Module_ ning setup papkasida nomida quyidagi kalit so&#39;zlar mavjud .sql fayl
      3.1. _Module_ ning sozlamalarini qiluvchi fayl nomi quyidagi standart bo&#39;yicha beriladi: ***module\_nomi\_ + &quot;setting.sql&quot;***.
 *Masalan:* ```mph_setting.sql```, ```mr_setting.sql```.
 
+&nbsp;
+&nbsp;
 ## Module ning paketlari (packages)
 
 _Module_ ning nomida quyidagi kalit so&#39;zlar mavjud paketlar *(package)* bo&#39;lishi mumkin:
@@ -70,6 +75,8 @@ end;
 2. watcher –_module_ ga tegishli ma&#39;lumotlarga taaluqli _watcher_ larni kodi yoziladigan paket.
 3. audit – _module_ ga tegishli ma&#39;lumotlarni _audit_ qilishga tegishli kod yoziladigan paket.
 
+&nbsp;
+&nbsp;
 ## Module lar ierarxiyasi
 
 1. _Module_ lar orqali qat&#39;iy ierarxiya quriladi. Natijada biror-bir _module_ faqat o&#39;zi va o&#39;zidan yuqori _module_ (lar)ga murojaat qilishi mumkin. _Module_ lar ierarxiyasi quyidagi sxemada ko&#39;rsatilgan.
@@ -121,7 +128,8 @@ start.sql da keltirilgan _module_ lar fayldagi tartibiga asoslanib, faqatgina o&
 - _MT module_ o&#39;zining, _MD, MA_ va _MS module_ larning paketlarini ishlata oladi.
 
 
-
+&nbsp;
+&nbsp;
 ## Jadvallar (tables)
 
 1. Jadval nomiga prefiks qilib _module_ nomi qo&#39;shilishi zarur.
@@ -172,6 +180,8 @@ Bu jadvalda o&#39;z ichiga (company\_id, discount\_card\_id) ustunlarini oluvchi
 *Masalan:* ```comment on table md_persons is 'All persons in the system';```
 1. Jadval ustidagi _delete_, _update_, _insert_, _lock for update_ operatsiyalari jadvalga tegishli **z-paket** yordamida amalga oshiriladi. Z-paket – jadvalga tegishli yordamchi funksiya va protseduralarni o&#39;z ichiga oluvchi paket. Z-paketlar bo&#39;yicha to&#39;liq ma&#39;lumotni fazo\_z.run funksiyasida ko&#39;rishingiz mumkin.
 
+&nbsp;
+&nbsp;
 ## UI ga tegishli asosiy standartlar
 
 1. Foydalanuvchi interfeysiga bog&#39;liq backend fayllar **ui** *(User Interface)* papkasidada saqlanadi.
@@ -234,6 +244,8 @@ _print\_top_ – odatda filterlar nomi chiqariladi
 _print\_body_ – reporting asosiy qismi bo&#39;ladi va reporting darajasiga qarab header, body, footer ga bo&#39;linadi, jadvallardan ma&#39;lumot shu qismda ko&#39;rsatiladi
 _print\_bottom_ – bu qismda rekvizitlar, imzo maydonlari va hokazo chiqariladi, odatda _invoice_ larda ishlatiladi.
 
+&nbsp;
+&nbsp;
 ## UI dagi query lar
 
 1. UI da jadvallarni ko&#39;rsatadigan formalarga tegishli qoidalar:
@@ -243,6 +255,8 @@ _print\_bottom_ – bu qismda rekvizitlar, imzo maydonlari va hokazo chiqariladi
 *Masalan:* ```Query_persons```, ```Query_payments```.
 3. _Query_ da html ga jo&#39;natiladigan ma&#39;lumotlar saralanmaydi (```order by```). Ma&#39;lumotlar html da saralanishi zarur.
 
+&nbsp;
+&nbsp;
 ## Hisobotlarning (reports) style lari
 
 1. Hisobotlarda ma&#39;lumot ko&#39;rsatilayotganda, **ma&#39;lumotlarning o&#39;rni** o&#39;zgaruvchi tipi bo&#39;yicha joylashadi:
@@ -256,6 +270,8 @@ _print\_bottom_ – bu qismda rekvizitlar, imzo maydonlari va hokazo chiqariladi
     3.2. **body** da ```header```, ```body```
     3.3. **footer** da ```footer```
 
+&nbsp;
+&nbsp;
 ## O&#39;zgaruvchilar (variables)
 
 1. O&#39;zgaruvchilar nomi ma&#39;noli, qisqa va tushunarli bo&#39;lishi zarur
@@ -288,6 +304,8 @@ _print\_bottom_ – bu qismda rekvizitlar, imzo maydonlari va hokazo chiqariladi
     6.1. &quot;r\_&quot; – parametrda jo&#39;natilgan _key_ ning _value_ si hashmap da mavjud bo&#39;lishi shart, aks holda funksiya xato qaytaradi.
     6.2. &quot;o\_&quot; - parametrda jo&#39;natilgan _key_ ning _value_ si hashmap da mavjud bo&#39;lmasa ham xato qaytarmaydi.
 
+&nbsp;
+&nbsp;
 ## Umumiy standartlar
 
 1. Yangi _module_ yaratilsa yoki mavjud module ga yangi paket qo&#39;shilsa, uning fayllarini ```start.sql``` va ```start_all.sql``` fayllariga qo&#39;shish zarur. ```start_all.sql``` faylining vazifasi – loyihaga tegishli barcha obyektlarni (table, sequence, setting va hokazo) yaratish va ```start.sql``` faylini ishga tushurish.
