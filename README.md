@@ -333,12 +333,11 @@ path – ```"/deal/cheque/cheque_one"```, code – ```"deal6"```.
 
 ```sql
 q := Fazo_Query('select *
-                       from Mr_Vans v
-                      where v.state = ''A''
-                        and exists (select 1 
-                                      from mrf_vans f
-                                     where f.van_id = v.van_id
-                                       and f.filial_id = :filial_id))',
-                    Fazo.Zip_Map('filial_id',
-                                 Ui.Filial_Id));
+                   from Mr_Vans v
+                  where v.state = ''A''
+                    and exists (select 1 
+                                  from mrf_vans f
+                                 where f.van_id = v.van_id
+                                   and f.filial_id = :filial_id))',
+                Fazo.Zip_Map('filial_id', Ui.Filial_Id));
 ```
