@@ -2,16 +2,16 @@
 &nbsp;
 ## Mundarija
 
-- [Module tushunchasi](https://github.com/iamsardorbek/markdown_test#module-tushunchasi)
-- [Module ning setup papkasi](https://github.com/iamsardorbek/markdown_test#module-ning-setup-papkasi)
-- [Module ning paketlari (packages)](https://github.com/iamsardorbek/markdown_test#module-ning-paketlari-packages)
-- [Module lar ierarxiyasi](https://github.com/iamsardorbek/markdown_test#module-lar-ierarxiyasi)
-- [Jadvallar (tables)](https://github.com/iamsardorbek/markdown_test#jadvallar-tables)
-- [UI ga tegishli asosiy standartlar](https://github.com/iamsardorbek/markdown_test#ui-ga-tegishli-asosiy-standartlar)
-- [UI dagi query lar](https://github.com/iamsardorbek/markdown_test#ui-dagi-query-lar)
-- [Hisobotlarning (reports) style lari](https://github.com/iamsardorbek/markdown_test#hisobotlarning-reports-style-lari)
-- [O&#39;zgaruvchilar (variables)](https://github.com/iamsardorbek/markdown_test#ozgaruvchilar-variables)
-- [Umumiy standartlar](https://github.com/iamsardorbek/markdown_test#umumiy-standartlar)
+- [Module tushunchasi](#module-tushunchasi)
+- [Module ning setup papkasi](#module-ning-setup-papkasi)
+- [Module ning paketlari (packages)](#module-ning-paketlari-packages)
+- [Module lar ierarxiyasi](#module-lar-ierarxiyasi)
+- [Jadvallar (tables)](#jadvallar-tables)
+- [UI ga tegishli asosiy standartlar](#ui-ga-tegishli-asosiy-standartlar)
+- [UI dagi query lar](#ui-dagi-query-lar)
+- [Hisobotlarning (reports) style lari](#hisobotlarning-reports-style-lari)
+- [O&#39;zgaruvchilar (variables)](#ozgaruvchilar-variables)
+- [Umumiy standartlar](#umumiy-standartlar)
 
 &nbsp;
 &nbsp;
